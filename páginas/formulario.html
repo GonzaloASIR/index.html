@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Datos usuario:</legend>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="correo electrónico" id="correo">Correo electrónico:</label><br>
+            <input type="text" id="correo" name="correo"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Fechas</legend>
+            <label for="inicioAlquiler">Desde:</label>
+            <input type="date" id="inicioAlquiler" name="inicioAlquiler" required>
+            <label for="finalAlquiler">Hasta:</label>
+            <input type="date" id="finalAlquiler" name="finalAlquiler" required><br>
+            <label for="fecha reserva" id="fecha">Fecha de la reserva</label><br>
+            <input type="text" id="fecha" name="fecha"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Ropa</legend>
+        <label for="talla">Talla:</label>
+        <select id="talla" name="talla"> Talla
+            <option value="Small">S</option>
+            <option value="Medium">M</option>
+            <option value="Large">L</option>
+            <option value="Extra large">XL</option>
+        </select><br>
+        <label for="cuello">Corbata o pajarita:</label>
+        <input type="radio" id="corbata" name="cuello" value="corbata" required>
+        <label for="corbata">Corbata</label>
+        <input type="radio" id="pajarita" name="cuello" value="pajarita" required>
+        <label for="pajarita">Pajarita</label><br>
+        <label for="chaleco, pañuelo o gemelos">Chaleco, pañuelo o gemelos:</label>
+        <input type="checkbox" id="chaleco" name="chaleco, pañuelo o gemelos" value="chaleco">
+        <label for="chaleco">Chaleco</label>
+        <input type="checkbox" id="panuelo" name="chaleco, pañuelo o gemelos" value="panuelo">
+        <label for="panuelo">Pañuelo</label>
+        <input type="checkbox" id="gemelos" name="chaleco, pañuelo o gemelos" value="gemelos">
+        <label for="gemelos">Gemelos</label><br>
+        </fieldset>
+        <button type="submit">Enviar Reserva</button>
+    </form>
+</body>
